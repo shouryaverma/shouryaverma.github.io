@@ -50,7 +50,7 @@
         }
 
         nav {
-            margin: 2rem 0;
+            margin: 1rem 0;
             border-top: 1px solid var(--secondary-color);
             border-bottom: 1px solid var(--secondary-color);
             padding: 1rem 0;
@@ -86,7 +86,7 @@
 
         .projects {
             display: grid;
-            gap: 2rem;
+            gap: 0.5rem;
         }
 
         .project {
@@ -134,14 +134,13 @@
         <header>
 			<meta charset="UTF-8">
             <h1>Shourya&#x26A0;</h1>
-            <div class="subtitle"> phd @PurdueCS / solving problems </div>
+            <div class="subtitle"> phd @PurdueCS // solving problems </div>
         </header>
 
 		<nav>
             <a href="#about">about</a>
 			<a href="#education">education</a>
 			<a href="#research">research</a>
-            <a href="#publications">publications</a>
 			<a href="#previously">previously</a>
             <a href="#contact">contact</a>
         </nav>
@@ -149,16 +148,16 @@
         <main>
             <section id="about">
                 <h2>about</h2>
-                <p>
+                <div class="project">
                     machine learning research in bio-medicine, healthcare and more.
-                </p>
+                </div>
             </section>
 
 			<section id="education">
                 <h2>education</h2>
 				<div class="project">
 					<div class="project-title">PhD Purdue University, USA, Computer Science</div>
-						Frederick N. Andrews Fellowship Recipient - Batch 2028
+					Frederick N. Andrews Fellowship Recipient - Batch 2028
 				</div>
 				<div class="project">
 					<div class="project-title">MSc Heidelberg University, Germany, Scientific Computing</div>
@@ -174,18 +173,29 @@
                 <h2>research</h2>
                 <div class="projects">
                     <div class="project">
-                        <div class="project-title">research1</div>
-                        <p>research desc</p>
+                        <div class="project-title">cancer</div>
+                        <p>
+							predicting metastasis through spatial transcriptomics <br>
+							generative models for cancer progression and treatment response
+						</p>
                     </div>
-                </div>
-            </section>
-
-            <section id="publications">
-                <h2>publications</h2>
-                <div class="projects">
-                    <div class="project">
-                        <div class="project-title">publication1</div>
-                        <p>publication desc</p>
+					<div class="project">
+                        <div class="project-title">neuroscience</div>
+                        <p>
+							predicting seizure like activity in brain organoids
+						</p>
+                    </div>
+					<div class="project">
+                        <div class="project-title">medical imaging</div>
+                        <p>
+							generative models for CT to PET image translation and tumor detection
+						</p>
+                    </div>
+					<div class="project">
+                        <div class="project-title">motion planning</div>
+                        <p>
+							multi-modal generative models for dual body 3D reactive motion synthesis
+						</p>
                     </div>
                 </div>
             </section>
@@ -193,9 +203,55 @@
 			<section id="previously">
                 <h2>previously</h2>
                 <div class="projects">
+					<div class="project">
+                        <div class="project-title"> Machine Learning - Purdue University - May/Jul 2024</div>
+                        <p>Developed open-source semi-supervised deep learning histopathology cell annotation tool for the Cancer Research Institute<br>
+						Unsupervised deep learning analysis of seizure-like-activity on brain organoids to study traumatic brain injury effects</p>
+                    </div>
                     <div class="project">
-                        <div class="project-title">previously1</div>
-                        <p>previously desc</p>
+                        <div class="project-title"> Machine Learning & Bioimage Analysis - EMBL Heidelberg - Apr/Nov 2023</div>
+                        <p>Self-supervised deep learning for segmentation and domain adaptation in natural/bio imaging applications</p>
+                    </div>
+					<div class="project">
+                        <div class="project-title"> Image Analysis & Learning - IWR Heidelberg - Nov/Apr 2023</div>
+                        <p>Optimizing UMAP's machine learning algorithm using autoencoders and discriminative contrastive loss methods</p>
+                    </div>
+					<div class="project">
+                        <div class="project-title"> Intelligent Medical Systems - DKFZ Heidelberg - Apr/Nov 2022</div>
+                        <p>Deep learning generalizability in tissue classification using domain-invariant representation of hyperspectral data</p>
+                    </div>
+					<div class="project">
+                        <div class="project-title"> Machine Learning - NHS Scotland - Jun/Aug 2021</div>
+                        <p>Developed an intelligent database to assist clinicians make informed decisions and provide personalized care to patients</p>
+                    </div>
+					<div class="project">
+                        <div class="project-title"> Machine Learning - Coursera - Jun/Aug 2021</div>
+                        <p>Developed MOOC 'Informed Clinical Decision Making using Deep Learning' for Coursera with Prof Fani Deligianni</p>
+                    </div>
+					<div class="project">
+                        <div class="project-title"> Machine Learning - Glasgow University - 2020/2021</div>
+                        <p>Machine Learning to Detect Kaon-Pion Hadron Particles<br>
+						Machine Learning to Detect Arrhythmia Based on ECG Data</p>
+                    </div>
+					<div class="project">
+                        <div class="project-title"> Software Development - Tata Consultancy Services - Jun/Jul 2020</div>
+                        <p>Research on UK-Europe fintech start-ups, covering technological trends of software development in the industry</p>
+                    </div>
+					<div class="project">
+                        <div class="project-title"> Software Development - Obashi Technology - 2019/2020</div>
+                        <p>Developed an augmented reality localization mapping android software to view dataflow between two machines with Unity</p>
+                    </div>
+					<div class="project">
+                        <div class="project-title"> Software Development - IIT Kanpur - Jun/Jul 2019</div>
+                        <p>Full-stack web-application developer for a journal sorting and storing application using NodeJS and NoSQL database</p>
+                    </div>
+					<div class="project">
+                        <div class="project-title"> Chemistry of Complex Systems - Frankfurt University - Jun/Jul 2018</div>
+                        <p>Applied computational photo-physics research: calculating two-photon absorption cross-section of phenylamine dyes</p>
+                    </div>
+					<div class="project">
+                        <div class="project-title"> Biological Sciences - IIT Kanpur - 2016/2017</div>
+                        <p>Experimenting on nano-materials under environmental stress and biomaterial-based charge storage and super-capacitors</p>
                     </div>
                 </div>
             </section>
@@ -203,6 +259,7 @@
             <section id="contact">
                 <h2>contact</h2>
                 <p>
+					<a href="https://scholar.google.com/citations?user=Y68jXgIAAAAJ&hl=en">google scholar</a> · 
                     <a href="https://twitter.com/flaczip">twitter</a>
                 </p>
             </section>
