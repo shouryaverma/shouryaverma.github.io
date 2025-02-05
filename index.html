@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Space</title>
+    <style>
+        :root {
+            --bg-color: #111111;
+            --text-color: #e0e0e0;
+            --accent-color: #646cff;
+            --secondary-color: #2a2a2a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', monospace;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 650px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            padding: 6rem 0 4rem 0;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            letter-spacing: -0.5px;
+            margin-bottom: 1rem;
+        }
+
+        .subtitle {
+            color: #666;
+            font-family: monospace;
+            font-size: 0.9rem;
+        }
+
+        nav {
+            margin: 2rem 0;
+            border-top: 1px solid var(--secondary-color);
+            border-bottom: 1px solid var(--secondary-color);
+            padding: 1rem 0;
+        }
+
+        nav a {
+            margin-right: 1.5rem;
+            text-decoration: none;
+            color: var(--text-color);
+            font-size: 0.9rem;
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        section {
+            margin: 4rem 0;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+            color: #888;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .projects {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .project {
+            font-family: monospace;
+            font-size: 0.9rem;
+        }
+
+        .project-title {
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+
+        a:hover {
+            opacity: 0.8;
+        }
+
+        footer {
+            margin-top: 6rem;
+            padding: 2rem 0;
+            color: #666;
+            font-size: 0.8rem;
+            text-align: center;
+            font-family: monospace;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 1.5rem;
+            }
+            
+            header {
+                padding: 4rem 0 2rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+			<meta charset="UTF-8">
+            <h1>Shourya&#x26A0;</h1>
+            <div class="subtitle"> phd @PurdueCS / solving problems </div>
+        </header>
+
+		<nav>
+            <a href="#about">about</a>
+			<a href="#research">research</a>
+            <a href="#projects">projects</a>
+			<a href="#education">education</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <main>
+            <section id="about">
+                <h2>about</h2>
+                <p>
+                    machine learning research in bio-medicine, healthcare and more.
+                </p>
+            </section>
+
+			<section id="research">
+                <h2>research</h2>
+                <div class="research">
+                    <div class="research1">
+                        <div class="research-title">→ project</div>
+                        <p>A collection of thoughts and ideas growing over time.</p>
+                    </div>
+                    <div class="research1">
+                        <div class="research-title">→ minimal notes</div>
+                        <p>Minimalist note-taking application built with React.</p>
+                    </div>
+                    <div class="research1">
+                        <div class="research-title">→ type.now</div>
+                        <p>A clean, distraction-free writing environment.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects">
+                <h2>projects</h2>
+                <div class="projects">
+                    <div class="project">
+                        <div class="project-title">→ project</div>
+                        <p>A collection of thoughts and ideas growing over time.</p>
+                    </div>
+                    <div class="project">
+                        <div class="project-title">→ minimal notes</div>
+                        <p>Minimalist note-taking application built with React.</p>
+                    </div>
+                    <div class="project">
+                        <div class="project-title">→ type.now</div>
+                        <p>A clean, distraction-free writing environment.</p>
+                    </div>
+                </div>
+            </section>
+
+			<section id="education">
+                <h2>education</h2>
+                <p>
+                    <a href="mailto:hello@example.com">hello@example.com</a><br>
+                    <a href="https://github.com/username">github</a> / 
+                    <a href="https://twitter.com/username">twitter</a>
+                </p>
+            </section>
+
+            <section id="contact">
+                <h2>contact</h2>
+                <p>
+                    <a href="mailto:hello@example.com">hello@example.com</a><br>
+                    <a href="https://github.com/username">github</a> / 
+                    <a href="https://twitter.com/username">twitter</a>
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2025 · built with care</p>
+        </footer>
+    </div>
+</body>
+</html>
